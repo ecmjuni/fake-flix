@@ -1,0 +1,4 @@
+.movieRow--listarea {
+    display: flex;
+    flex-direction: row;
+}

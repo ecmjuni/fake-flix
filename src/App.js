@@ -22,7 +22,7 @@ const App = () => {
       {
        movieList.map((item, key) => (
           <div>
-            <MovieRow />
+            <MovieRow key={key} title={item.title} items={item.items} />
           </div>
         )
        )
