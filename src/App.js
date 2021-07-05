@@ -9,7 +9,7 @@ const App = () => {
 
   useEffect(() => {
     const loadAll = async () => {
-      let list = await Tmdb();
+      let list = await Tmdb.getHomeList();
       setMovieList(list);
     }
 
@@ -21,8 +21,8 @@ const App = () => {
       <section className="lists">
       {
        movieList.map((item, key) => (
-          <div>
-            <MovieRow key={key} title={item.title} items={item.items} />
+          <div key={key}>
+            <MovieRow title={item.title} items={item.items} />
           </div>
         )
        )

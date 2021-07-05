@@ -1,4 +1,26 @@
+.movieRow {
+    margin-bottom: 30px;
+}
+
+.movieRow h2 {
+    margin: 0px 0px 0px 30px;
+}
+
 .movieRow--listarea {
     display: flex;
     flex-direction: row;
+    overflow-x: hidden;
 }
+
+.movieRow--listarea img {
+    display: inline-block;
+    width: 100%;
+    transform: scale(0.9);
+    transition: all ease 0.3s;
+    cursor: pointer;
+}
+
+.movieRow--listarea img:hover {
+    transform: scale(1);
+}
+
